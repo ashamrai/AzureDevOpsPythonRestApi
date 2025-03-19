@@ -1,3 +1,5 @@
+#run pip install azure-devops
+
 from azure.devops.connection import Connection
 from msrest.authentication import BasicAuthentication
 import json
