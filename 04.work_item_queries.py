@@ -17,7 +17,7 @@ team_project = '<Team Project Name>'
 queryWiqlList = f'SELECT [System.Id] FROM WorkItems WHERE [System.TeamProject] = \'{team_project}\' and [System.WorkItemType] = \'User Story\' and [System.State] <> \'Removed\' and [System.State] <> \'Closed\''
 queryWiqlTree  = f"""
 SELECT [System.Id] FROM WorkItemLinks WHERE ([Source].[System.TeamProject] = '{team_project}' AND  [Source].[System.WorkItemType] IN ('Feature', 'User Story')  
-AND  [Source].[System.State] IN (\'New\', \'Active', 'Resolved')) And ([System.Links.LinkType] = 'System.LinkTypes.Hierarchy-Forward') And 
+AND  [Source].[System.State] IN ('New', 'Active', 'Resolved')) And ([System.Links.LinkType] = 'System.LinkTypes.Hierarchy-Forward') And 
 ([Target].[System.WorkItemType] IN ('User Story', 'Task') AND  [Target].[System.State] IN ('New', 'Active', 'Resolved')) ORDER BY [Microsoft.VSTS.Common.StackRank], [System.Id] mode(Recursive)
 """
 
