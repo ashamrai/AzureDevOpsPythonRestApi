@@ -3,8 +3,8 @@ from msrest.authentication import BasicAuthentication
 import json
 
 # Replace with your organization URL and PAT
-organization_url = 'https://dev.azure.com/ashamray'
-personal_access_token = 'Ese2g7JRVIdTo2TBxI6pGEdUP5Cd7JO7nKneGe0MNupvulQNUFPYJQQJ99BBACAAAAAOCwC1AAAGAZDO4X9u'
+organization_url = 'https://dev.azure.com/<ORG>'
+personal_access_token = '<PAT>'
 
 # Create a connection to the organization
 credentials = BasicAuthentication('', personal_access_token)
