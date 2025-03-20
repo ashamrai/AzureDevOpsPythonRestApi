@@ -2,7 +2,6 @@
 
 from azure.devops.connection import Connection
 from msrest.authentication import BasicAuthentication
-from azure.devops.v7_1.work_item_tracking.models import Wiql
 from azure.devops.v7_1.work_item_tracking.models import TeamContext
 
 # Replace with your organization URL and PAT
