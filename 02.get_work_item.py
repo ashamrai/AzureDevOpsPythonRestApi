@@ -30,7 +30,7 @@ def show_work_item(wi):
     for witfield in wit.fields:        
         refName = witfield.reference_name
         if (refName in wi.fields):
-            print(f'{refName} - {wi.fields[refName]}')
+            print(f'{witfield.name} - {wi.fields[refName]}')
 
     print(f'\n\nWork Item Relations')
 
