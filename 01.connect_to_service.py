@@ -13,7 +13,7 @@ connection = Connection(base_url=organization_url, creds=credentials)
 
 # Get clients
 wit_client = connection.clients.get_work_item_tracking_client()
-buil_client = connection.clients.get_build_client()
+build_client = connection.clients.get_build_client()
 core_client = connection.clients.get_core_client()
 git_client = connection.clients.get_git_client()
 test_client = connection.clients.get_test_client()
