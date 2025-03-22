@@ -86,8 +86,10 @@ def update_bug(bug_id):
 
     updated_bug = update_work_item(bug_id, fields)
 
+# show all fileds of a work item type
+get_work_item_type_fields(bug_work_item_type)
+input("Press Enter to continue...")
 
-#get_work_item_type_fields(bug_work_item_type)
 new_bug_id = create_bug()
 print(f'Bug ID - {new_bug_id}')
 
